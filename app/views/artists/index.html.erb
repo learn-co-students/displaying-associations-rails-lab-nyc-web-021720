@@ -1,0 +1,12 @@
+<h1>Artist Home Page</h1>
+
+<ul>
+<% @artists.each do |artist| %>
+  <li>Artist Name: <%= artist.name %> - Total Songs: <%= pluralize(artist.song_count, 'song') %></li>
+<% end %>
+</ul>
+
+ <%# index page lists the artists (FAILED - 1)
+shows the song count for each artist (FAILED - 2) %>
+
+<%# pluralize(@category.posts.count, 'Post') %>
